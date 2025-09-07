@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCounterInterview", "WordCounterInterview\WordCounterInterview.csproj", "{D981A4B8-A64B-4477-854E-8638921397CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D981A4B8-A64B-4477-854E-8638921397CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D981A4B8-A64B-4477-854E-8638921397CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D981A4B8-A64B-4477-854E-8638921397CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D981A4B8-A64B-4477-854E-8638921397CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
