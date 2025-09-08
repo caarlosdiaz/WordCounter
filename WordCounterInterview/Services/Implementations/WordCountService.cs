@@ -31,15 +31,20 @@ public class WordCountService : IWordCountService
     /// Normalizes the text: lowercases, removes non-letter characters.
     /// </summary>
     /// <remarks>
-    /// Regex explanation:
+    /// Regex explanation for text normalization:
     /// - \p{L} matches any kind of letter in Unicode (Latin, Cyrillic, Greek, Asian, etc.).
     /// - \s matches any whitespace character (spaces, tabs, line breaks).
     /// - [^\p{L}\s] means "any character that is not a letter or a whitespace".
-    /// This ensures the text only contains valid words separated by spaces.
+    /// These characters are replaced by a space to avoid concatenating words accidentally.
+    /// - \s+ matches one or more consecutive whitespace characters.
+    /// After replacement, multiple consecutive spaces are collapsed into a single space.
     /// </remarks>
     private string NormalizeContent(string content)
     {
         string loweredContent = content.ToLowerInvariant();
-        return Regex.Replace(loweredContent, @"[^\p{L}\s]", "");
+        
+        string lettersOnlyContent = Regex.Replace(loweredContent, @"[^\p{L}\s]", " ");
+        
+        return Regex.Replace(lettersOnlyContent, @"\s+", " ").Trim();
     }
 }
