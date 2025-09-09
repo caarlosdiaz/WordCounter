@@ -3,7 +3,7 @@
 ## Overview
 This project implements a **Word Counter API** in **.NET 9 (C#)**, designed as a preparation for a technical interview.  
 
-While the problem statement was very simple:
+While the problem statement was simple:
 
 > *"Given a text file, count the occurrence of each unique word in the file."*
 
@@ -47,7 +47,7 @@ Since the statement was underspecified, I made the following assumptions:
    - **Unit Tests** for the word counting service.  
    - **Integration Tests** for the API endpoints using `WebApplicationFactory`.
 
---
+---
 
 ## Results
 
@@ -55,7 +55,7 @@ The API was deployed in a Docker container and tested through the Swagger UI:
 
 ![Swagger screenshot](./assets/SwaggerScreenshot.png)
 
-Using the example given in the statement
+Using the example provided in the email statement
 
 ```text
 "Go do that thing that you do so well"
