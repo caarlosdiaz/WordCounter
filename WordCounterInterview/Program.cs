@@ -26,3 +26,9 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+/// <summary>
+/// This partial class is required because the Test package
+/// needs a concrete entry point type to locate the application.
+/// </summary>
+public partial class Program { }
