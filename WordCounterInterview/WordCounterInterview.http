@@ -1,6 +1,0 @@
-@WordCounterInterview_HostAddress = http://localhost:5023
-
-GET {{WordCounterInterview_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
